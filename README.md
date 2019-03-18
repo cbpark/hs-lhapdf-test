@@ -1,10 +1,10 @@
 # hs-lhapdf-test
 
-This codes test the Haskell foreign function interface for [LHAPDF](https://lhapdf.hepforge.org/).
+The codes for testing the Haskell foreign function interface to [LHAPDF](https://lhapdf.hepforge.org/).
 
 ## Usage
 
-The version of [Cabal](https://www.haskell.org/cabal/) must be `>= 2.2` to use `cxx-sources` and `cxx-options`. It has been tested with LHAPDF 6.2.1.
+The version of [Cabal](https://www.haskell.org/cabal/) must be `>= 2.2` to use `cxx-sources` and `cxx-options`. It has been tested with `LHAPDF 6.2.1`.
 
 Users of [Nix](https://nixos.org/nixpkgs/) can build and run the codes using `nix-shell`.
 
