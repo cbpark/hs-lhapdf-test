@@ -1,7 +1,7 @@
 cabal-version:       2.2
 name:                hs-lhapdf-test
 version:             0.1.0.0
-synopsis:            Test for the haskell FFI to use LHAPDF
+synopsis:            Test for the Haskell FFI to use LHAPDF
 -- description:
 bug-reports:         https://github.com/cbpark/hs-lhapdf-test/issues
 license:             BSD-3-Clause
