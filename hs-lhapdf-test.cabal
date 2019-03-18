@@ -1,0 +1,30 @@
+cabal-version:       2.2
+name:                hs-lhapdf-test
+version:             0.1.0.0
+synopsis:            Test for the haskell FFI to use LHAPDF
+-- description:
+bug-reports:         https://github.com/cbpark/hs-lhapdf-test/issues
+license:             BSD-3-Clause
+license-file:        LICENSE
+author:              Chan Beom Park
+maintainer:          cbpark@gmail.com
+copyright:           (c) 2019 Chan Beom Park
+category:            Physics
+extra-source-files:  README.md
+tested-with:         GHC == 8.6.3
+
+common deps
+  build-depends:       base >= 4.12
+  default-language:    Haskell2010
+  ghc-options:         -Wall
+
+  cxx-sources:         lhapdf/lhapdf_c.cc
+  include-dirs:        lhapdf
+  cxx-options:         -O2 -Wall -fPIC
+  extra-libraries:     LHAPDF, stdc++
+
+executable lhapdf-test
+  import:              deps
+  main-is:             lhapdf-test.hs
+  other-modules:       HEP.Data.LHAPDF
+  hs-source-dirs:      src

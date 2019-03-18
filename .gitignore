@@ -1,0 +1,6 @@
+dist*
+.ghc.environment*
+packages.cache*
+result
+.stack-work
+TAGS
